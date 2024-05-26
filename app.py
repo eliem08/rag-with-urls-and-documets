@@ -10,6 +10,10 @@ from langchain.vectorstores import Chroma
 from langchain.llms import OpenAI
 from langchain.chains import RetrievalQA
 from dotenv import load_dotenv
+__import__('pysqlite3')
+import sqlite3
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 
 llm = Ollama(model="llama3")
 # Load environment variables
