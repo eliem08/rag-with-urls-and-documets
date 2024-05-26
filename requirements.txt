@@ -5,3 +5,4 @@ pypdf
 openai 
 tiktoken
 bs4
+pysqlite3-binary
