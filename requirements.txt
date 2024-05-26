@@ -4,3 +4,4 @@ langchain_community
 pypdf 
 openai 
 tiktoken
+bs4
